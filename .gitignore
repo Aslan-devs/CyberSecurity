@@ -1,0 +1,21 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas temporales de editores
+.vscode/
+.idea/
+
+# Archivos de build (si usas herramientas opcionales como npm o bundlers)
+node_modules/
+dist/
+build/
+.cache/
+.tmp/
+
+# Archivos de entorno o configuración local
+.env
+.env.local
+
+# Archivos de logs
+*.log
