@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CyberSecurity</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="JavaScript/menu.js"></script>
+    <link rel="stylesheet" href="Animations/style.css">
 </head>
-<body>
-    <h1>hola q tal</h1>
+
+<body class="bg-[#0A0F1A]">
+    <header class="py-3">
+        <nav class="hidden lg:flex items-center justify-center gap-4 py-4 text-sm font-medium relative max-w-6xl mx-auto">
+
+            <div class="nav-left flex items-center gap-10 bg-[#1C212E] pl-12 pr-32 py-4 rounded-l-2xl text-[#E0E0E0]">
+                <a href="#" class="nav-link hover:text-red-600 font-semibold">Inicio</a>
+                <a href="#" class="nav-link hover:text-red-600 rounded-lg transition">Ventajas</a>
+                <a href="#" class="nav-link px-2 py-1 rounded-lg hover:text-red-600 transition whitespace-nowrap">Características</a>
+            </div>
+
+            <div class="absolute left-1/2 transform -translate-x-1/2 bg-[#1C212E] rounded-full w-22 h-22 flex items-center justify-center shadow-2xl z-10">
+                <img src="Images/hexstrike-logo.png" alt="logo-hexstrike" class="w-12 h-12 object-contain">
+            </div>
+            
+            <div class="nav-right flex items-center gap-10 bg-[#1C212E] pl-32 pr-12 py-4 rounded-r-2xl text-[#E0E0E0]">
+                <a href="" class="nav-link hover:text-red-600 transition">Instalación</a>
+                <a href="" class="nav-link hover:text-red-600 transition">Uso</a>
+                <a href="" class="github-btn bg-[#4A46FF] text-white px-6 py-1 rounded-lg hover:bg-red-600 transition">GitHub</a>
+            </div>
+        </nav>
+
+        <nav class="lg:hidden px-4 py-4 ">
+            <div class="flex items-center justify-between relative bg-[#1C212E] rounded-lg">
+                <div class="absolute left-1/2 transform -translate-x-1/2 bg-[#1C212E] rounded-full w-15 h-15 flex items-center justify-center shadow-2xl z-10">
+                    <img src="Images/hexstrike-logo.png" alt="logo-hexstrike" class="w-8 h-8 object-contain">
+                </div>
+                <div class="ml-auto">
+                    <button id="menuBtn" class="text-white focus:outline-none hover:bg-[#0A0F1A] rounded-lg px-2 py-1">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-with="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Menu Mobile-->
+            <div id="mobileMenu" class=" hidden bg-[#1C212E] rounded-2xl mt-2 py-4 px-6 shadow-lg">
+               <a href="#" class="block py-3 text-[#E0E0E0] hover:bg-[#0A0F1A] rounded-lg font-semibold transition">Inicio</a>
+               <a href="#" class="block py-3 text-[#E0E0E0] hover:bg-[#0A0F1A] transition rounded-lg">Ventajas</a>
+               <a href="#" class="block py-3 text-[#E0E0E0] hover:bg-[#0A0F1A] transition rounded-lg">Características</a>
+               <a href="#" class="block py-3 text-[#E0E0E0] hover:bg-[#0A0F1A] transition rounded-lg">Instalación</a>
+               <a href="#" class="block py-3 text-[#E0E0E0] hover:bg-[#0A0F1A] transition rounded-lg">Uso</a>
+               <a href="#" class="block mt-4 bg-[#4A46FF] text-white px-6 py-1 rounded-lg hover:bg-black transition font-semibold text-center"">GitHub</a>
+            </div>
+        </nav>
+            
+        
+    </header>
+    
+    <main>
+        
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>

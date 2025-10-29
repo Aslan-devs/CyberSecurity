@@ -1,0 +1,118 @@
+/* Animación de fade in para el header */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animación de rotación suave para el logo */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Animación de slide in desde los lados */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animación de pulso para el botón */
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(74, 70, 255, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(74, 70, 255, 0);
+            }
+        }
+
+        /* Aplicar animaciones */
+        header {
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .nav-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .nav-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .github-btn {
+            animation: pulse 2s infinite;
+        }
+
+        /* Hover effect mejorado para links */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 50%;
+            background-color: currentColor;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Animación de menu mobile */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .mobile-menu-show {
+            animation: slideDown 0.3s ease-out;
+        }
+
+        /* Efecto de scale en hover */
+        .scale-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .scale-hover:hover {
+            transform: scale(1.05);
+        }
