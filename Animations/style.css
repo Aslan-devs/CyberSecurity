@@ -46,7 +46,7 @@
         /* Animación de pulso para el botón */
         @keyframes pulse {
             0%, 100% {
-                box-shadow: 0 0 0 0 rgba(74, 70, 255, 0.7);
+                box-shadow: 0 0 0 0 rgba(255, 70, 70, 0.7);
             }
             50% {
                 box-shadow: 0 0 0 10px rgba(74, 70, 255, 0);
@@ -67,7 +67,7 @@
         }
 
         .github-btn {
-            animation: pulse 2s infinite;
+            animation: pulse 3s infinite;
         }
 
         /* Hover effect mejorado para links */
